@@ -16,7 +16,7 @@ class AdicionarAlunoActivity : AppCompatActivity() {
     fun salvar (botao : View) {
         var etNome = findViewById<EditText>(R.id.nome)
         var etCurso = findViewById<EditText>(R.id.curso)
-        var etPont = findViewById<EditText>(R.id.pont)
+        var etPont = findViewById<EditText>(R.id.pontuacao)
 
         val nome = etNome.text.toString()
         val curso = etCurso.text.toString()

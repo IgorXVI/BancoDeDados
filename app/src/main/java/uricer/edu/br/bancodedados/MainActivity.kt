@@ -67,7 +67,7 @@ class MainActivity : AppCompatActivity() {
 
         alunos.removeAllViews()
 
-        var linhas = banco.query("aluno", null, null, null, null, null, "pont DESC")
+        var linhas = banco.rawQuery("SELECT * FROM aluno ORDER BY pont ASC", null)
 
         while (linhas.moveToNext()) {
             var linha = TableRow(this)
